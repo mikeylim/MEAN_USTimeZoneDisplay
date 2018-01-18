@@ -1,4 +1,5 @@
 # USTimeZoneDisplay
+![ustimezonedisplay](https://user-images.githubusercontent.com/13756917/35075256-f5afe246-fba6-11e7-8f91-6b8b6bcbf2fb.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
