@@ -11,24 +11,38 @@ export class AppComponent {
   zone:string;
   clear:boolean;
   date:number;
-  onButtonPSTClick() {
-    this.zone= "pst";
-    this.date = Date.now();
+  constructor(){
+    this.date;
+    this.zone = 'UTC';
   }
-  onButtonMSTClick() {
-    this.zone = "mst";
-    this.date = Date.now();
+  onButtonClick(newZone) {
+    if(newZone == "clear") {
+      this.zone = "UTC";
+      this.date = null;
+    } else {
+      this.zone = newZone;
+      this.date = Date.now();
+    }
   }
-  onButtonCSTClick() {
-    this.zone = "cst";
-    this.date = Date.now();
-  }
-  onButtonESTClick() {
-    this.zone = "est";
-    this.date = Date.now();
-  }
-  onButtonClearClick() {
-    this.zone = "clear";
-    this.date = null;
-  }
+
+  // onButtonPSTClick() {
+  //   this.zone= "pst";
+  //   this.date = Date.now();
+  // }
+  // onButtonMSTClick() {
+  //   this.zone = "mst";
+  //   this.date = Date.now();
+  // }
+  // onButtonCSTClick() {
+  //   this.zone = "cst";
+  //   this.date = Date.now();
+  // }
+  // onButtonESTClick() {
+  //   this.zone = "est";
+  //   this.date = Date.now();
+  // }
+  // onButtonClearClick() {
+  //   this.zone = "clear";
+  //   this.date = null;
+  // }
 }

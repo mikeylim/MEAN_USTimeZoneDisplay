@@ -6,7 +6,7 @@ button{
 div{
     text-align: center;
 }
-.on{
+.selected{
     background-color: yellow;
     font-weight: bold;
 }

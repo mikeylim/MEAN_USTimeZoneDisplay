@@ -13,11 +13,11 @@
   </div>
 
   <div class="container-fluid">    
-    <button class="btn btn-outline-primary btn-lg" (click)="onButtonPSTClick()" [ngClass]='{"on": zone=="pst"}'>PST</button>      
-    <button class="btn btn-outline-primary btn-lg" (click)="onButtonMSTClick()" [ngClass]='{"on": zone=="mst"}'>MST</button>
-    <button class="btn btn-outline-primary btn-lg" (click)="onButtonCSTClick()" [ngClass]='{"on": zone=="cst"}'>CST</button>
-    <button class="btn btn-outline-primary btn-lg" (click)="onButtonESTClick()" [ngClass]='{"on": zone=="est"}'>EST</button>
-    <button class="btn btn-outline-primary btn-lg" (click)="onButtonClearClick()" [ngClass]='{"off": zone=="clear"}'>Clear</button>
+    <button class="btn btn-outline-primary btn-lg" (click)="onButtonClick('pst')" [ngClass]='{"selected": "pst"==zone}'>PST</button>      
+    <button class="btn btn-outline-primary btn-lg" (click)="onButtonClick('mst')" [ngClass]='{"selected": "mst"==zone}'>MST</button>
+    <button class="btn btn-outline-primary btn-lg" (click)="onButtonClick('cst')" [ngClass]='{"selected": "cst"==zone}'>CST</button>
+    <button class="btn btn-outline-primary btn-lg" (click)="onButtonClick('est')" [ngClass]='{"selected": "est"==zone}'>EST</button>
+    <button class="btn btn-outline-primary btn-lg" (click)="onButtonClick('clear')" [ngClass]='{"selected": "clear"==zone}'>Clear</button>
   </div>
 
   <div class="container text-center" style="margin-top:40px">
